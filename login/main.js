@@ -35,6 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Nếu mọi thứ hợp lệ, có thể xử lý đăng nhập hoặc chuyển đến trang khác
         alert('Đăng nhập thành công!');
         // Ví dụ: Chuyển hướng người dùng đến trang chính sau khi đăng nhập thành công
-        window.location.href = "dashboard.html";
+        window.location.href = "welcome.html";
     });
 });

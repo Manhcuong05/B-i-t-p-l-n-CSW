@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty and Wellness</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Beauty & Wellness</div>
+        <nav>
+            <ul>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+                <li><button id="darkModeToggle">Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Phần chào mừng -->
+    <section class="welcome-section">
+        <h1>Chào mừng đến với Beauty & Wellness</h1>
+        <p>Nơi bạn tìm thấy những sản phẩm mỹ phẩm cao cấp để chăm sóc làn da của bạn.</p>
+        <a href="#products" class="cta-btn">Khám phá sản phẩm</a>
+    </section>
+
+    <!-- Giới thiệu về thương hiệu -->
+    <section id="about" class="about-section">
+        <h2>Về chúng tôi</h2>
+        <p>Beauty & Wellness là thương hiệu mỹ phẩm uy tín, cung cấp các sản phẩm chăm sóc da tự nhiên và chất lượng cao.</p>
+    </section>
+
+    <!-- Phần sản phẩm -->
+    <section id="products" class="products-section">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="1.png" alt="Sản phẩm 1">
+                <h3>Sản phẩm 1</h3>
+                <p>Combo 7 dụng cụ trang điểm.</p>
+            </div>
+            <div class="product-card">
+                <img src="2.png" alt="Sản phẩm 2">
+                <h3>Sản phẩm 2</h3>
+                <p>Chăm sóc da rau má.</p>
+            </div>
+            <div class="product-card">
+                <img src="3.png" alt="Sản phẩm 3">
+                <h3>Sản phẩm 3</h3>
+                <p>Chăm sóc da dưỡng ẩm.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="contact" class="contact-section">
+        <h2>Liên hệ với chúng tôi</h2>
+        <p>Hãy gửi câu hỏi hoặc yêu cầu của bạn để nhận sự hỗ trợ tốt nhất từ chúng tôi.</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Tên của bạn" required>
+            <input type="email" id="email" placeholder="Email của bạn" required>
+            <textarea id="message" placeholder="Tin nhắn của bạn" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Beauty & Wellness. All rights reserved.</p>
+    </footer>
+
+    <script src="welcome.js"></script>
+</body>
+</html>
