@@ -15,10 +15,12 @@
                 <input type="text" id="username" name="username" required placeholder="Nhập email hoặc số điện thoại">
                 <span id="usernameError" class="error-message"></span> <!-- Thêm span để hiển thị thông báo lỗi -->
             </div>
+
             <div class="input-group">
                 <label for="password">Mật khẩu</label>
                 <input type="password" id="password" name="password" required placeholder="Nhập mật khẩu của bạn">
-            </div>
+                <span id="passwordError" class="error-message"></span> <!-- Thêm span để hiển thị thông báo lỗi mật khẩu -->
+            </div>            
             <div class="remember-group">
                 <label>
                     <input type="checkbox" name="remember"> Ghi nhớ đăng nhập
@@ -28,11 +30,10 @@
             <button type="submit" class="login-btn">Đăng nhập</button>
         </form>
         <div class="signup">
-            Bạn chưa có tài khoản? <a href="#">Đăng ký ngay</a>
+            Bạn chưa có tài khoản? <a href="register.html">Đăng ký ngay</a> <!-- Cập nhật liên kết đến register.html -->
         </div>
     </div>
 
     <script src="main.js"></script> <!-- Kết nối tệp JS -->
 </body>
 </html>
-

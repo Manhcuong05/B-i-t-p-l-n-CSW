@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-.login-container {
+.register-container {
     background-color: white;
     padding: 50px; /* Tăng padding */
     border-radius: 10px;
@@ -22,7 +22,7 @@ body {
     width: 450px; /* Tăng chiều rộng */
 }
 
-.login-container h2 {
+.register-container h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
@@ -42,7 +42,7 @@ body {
 .input-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #9b59b6;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -53,35 +53,15 @@ body {
     box-shadow: 0px 0px 5px rgba(155, 89, 182, 0.5);
 }
 
-.remember-group {
-    display: flex;
-    justify-content: space-between; /* Thêm khoảng cách giữa các phần tử */
-    align-items: center;
-    margin-bottom: 30px; /* Tăng khoảng cách phía dưới */
+.error-message {
+    color: red; /* Màu sắc cho thông báo lỗi */
+    font-size: 14px; /* Kích thước chữ */
+    margin-top: 5px; /* Khoảng cách giữa trường nhập và thông báo lỗi */
 }
 
-.remember-group label {
-    display: flex;
-    align-items: center;
-}
-
-.remember-group input {
-    margin-right: 10px; /* Tăng khoảng cách giữa checkbox và text */
-}
-
-.forgot-password {
-    color: #9b59b6;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
-.login-btn {
+.register-btn {
     width: 100%;
-    padding: 15px; /* Tăng kích thước nút */
+    padding: 10px; /* Tăng kích thước nút */
     background-color: #9b59b6;
     color: white;
     border: none;
@@ -91,45 +71,43 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.login-btn:hover {
+.register-btn:hover {
     background-color: #8e44ad;
 }
 
-.login-btn:active {
+.register-btn:active {
     background-color: #732d91;
 }
 
-.signup {
+.back-to-login {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
 }
 
-.signup a {
+.back-to-login a {
     color: #9b59b6;
     text-decoration: none;
     font-weight: bold;
 }
 
-.signup a:hover {
+.back-to-login a:hover {
     text-decoration: underline;
 }
-.error-message {
-    color: red; /* Màu sắc cho thông báo lỗi */
-    font-size: 14px; /* Kích thước chữ */
-    margin-top: 5px; /* Khoảng cách giữa trường nhập và thông báo lỗi */
-}
 
-.login-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #9b59b6;
-    color: white;
-    border: none;
+/* Căn chỉnh giới tính */
+.input-group select {
+    width: 100%; /* Đảm bảo chiều rộng là 100% */
+    padding: 10px; /* Tăng kích thước padding */
+    border: 1px solid  #9b59b6;
     border-radius: 5px;
-    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-size: 16px; /* Tăng kích thước chữ */
+    cursor: pointer; /* Thêm con trỏ tay cho chọn giới tính */
 }
 
-.login-btn:hover {
-    background-color:  #9b59b6;
+.input-group select option {
+    background-color: white; /* Màu nền cho các tùy chọn */
+    color: black; /* Màu chữ cho các tùy chọn */
 }

@@ -16,9 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const username = document.getElementById('username').value.trim();
         const password = document.getElementById('password').value.trim();
         const usernameError = document.getElementById('usernameError');
+        const passwordError = document.getElementById('passwordError'); // Thêm phần xử lý lỗi mật khẩu
 
         // Đặt lại thông báo lỗi
         usernameError.textContent = '';
+        passwordError.textContent = '';
 
         // Kiểm tra tên đăng nhập
         if (!checkEmail(username) && !checkPhone(username)) {
@@ -28,13 +30,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Kiểm tra mật khẩu
         if (password === "") {
-            alert('Mật khẩu không được để trống');
+            passwordError.textContent = 'Mật khẩu không được để trống';
+            return;
+        }
+
+        if (password.length < 8) {
+            passwordError.textContent = 'Mật khẩu phải có ít nhất 8 ký tự.';
+            return;
+        }
+
+        if (password.includes(' ')) {
+            passwordError.textContent = 'Mật khẩu không được chứa dấu cách.';
             return;
         }
 
         // Nếu mọi thứ hợp lệ, có thể xử lý đăng nhập hoặc chuyển đến trang khác
         alert('Đăng nhập thành công!');
-        // Ví dụ: Chuyển hướng người dùng đến trang chính sau khi đăng nhập thành công
-        window.location.href = "welcome.html";
+        window.location.href = "welcome.html"; // Chuyển hướng đến trang welcome sau khi đăng nhập thành công
     });
 });
