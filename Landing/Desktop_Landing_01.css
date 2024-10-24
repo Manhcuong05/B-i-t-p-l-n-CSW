@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+    height: 5182px;
+    top: 2357px;
+    left: -44530px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+}
+
+#logo_header {
+    position: absolute;
+    width: 120px;
+    height: 59px;
+    top: 24px;
+    left: 108px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+
+#header {
+    position: fixed; /* Thay đổi từ absolute sang fixed */
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 107px;
+    background: linear-gradient(to right, #efdbe5, #fff);
+    z-index: 1;
+}
+
+
+#nav-h {
+    position: absolute;
+    width: Hug (673px)px;
+    height: Hug (22px)px;
+    top: 61px;
+    left: 383.5px;
+    gap: 40px;
+    opacity: 0px;
+}
+
+.menu-item {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.menu-item a:hover {
+    color: #A10550;
+}
+
+#search {
+    position: absolute;
+    top: 56.9px;
+    right: 383.5px;
+    cursor: pointer;
+}
+
+#line {
+    position: absolute;
+    top: 65px;
+    right: 383.5px;
+}
+
+#VN {
+    position: absolute;
+    top: 50px;
+    right: 290px;
+    cursor: pointer;
+}
+
+
+
+#big1 {
+    width: 629px;
+    height: 625px;
+    
+}
+
+#tab1 {
+    position: absolute;
+    width: 80px;
+    height: 629px;
+    padding: 289px 20px 300px 20px;
+    background: #0C0C0C66;
+}
