@@ -1,0 +1,448 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+position: relative;
+font-family: Arial, sans-serif;
+width: 1440px;
+height: 2285px;
+gap: 0px;
+opacity: 0px;
+background-color: #FAF9F5;
+}
+
+
+/*HEADER*/
+
+.header {
+position: fixed;
+overflow: hidden;
+display: flex;
+width: 1540px;
+height: 107px;
+justify-content: space-between;
+align-items: center;
+padding: 15px 30px;
+background-color: #FFFFFF;
+border-bottom: 1px solid #DFDFDF;
+z-index: 5;
+}
+
+.logo-img {
+position: absolute;
+width: 120px;
+height: 59px;
+top: 24px;
+left: 108px;
+gap: 0px;
+opacity: 0px;
+z-index: 1;
+}
+
+#circle-shadow {
+position: absolute;
+width: 114px;
+height: 114px;
+top: 19px;
+left: 78px;
+gap: 0px;
+background-color: #A10550; 
+border-radius: 100%;
+backdrop-filter: blur(250px);
+box-shadow: 0 0 114px 114px #A10550; 
+opacity: 0.2;
+z-index: 0;
+}
+
+.navbar {
+position: absolute;
+width: 673px;
+height: 22px;
+top: 61px;
+left: 383.5px;
+}
+
+.navbar a {
+margin: 0 15px;
+text-decoration: none;
+color: #333;
+font-weight: bold;
+}
+
+.navbar a:hover {
+color: #b4004e;
+}
+
+.actions {
+position: absolute;
+width: 144px;
+height: 48px;
+top: 44px;
+left: 1188px;
+gap: 4px;
+display: flex;
+justify-content: start;
+align-items: center;
+}
+
+.search-btn{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+gap: 4px;
+}
+
+
+.search-img{
+width: 24px;
+height: 24px;
+gap: 0px;
+}
+
+#line1{
+width: 24px;
+height: 0px;
+gap: 0px;
+transform: rotate(90deg);
+opacity: 0px;
+border: 1px solid #868686
+}
+
+.globe {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 96px;
+height: 48px;
+gap: 4px;
+white-space: nowrap; 
+text-overflow: ellipsis; 
+transition: font-weight 0.3s;
+}
+
+.globe img {
+width: 24px;
+height: 24px;
+gap: 0px;
+}
+
+.globe-text{
+display: flex;
+text-align: start;
+width: 52px;
+height: 29px;
+gap: 0px;
+opacity: 0px;    
+}
+
+.nation{
+width: 52px;
+height: 29px;
+font-size: 16px;
+font-weight: 400;
+line-height: 28.8px;
+color: #0C0C0C
+}
+
+.language{
+color: #606060;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.globe:hover .nation {
+font-weight: 300; 
+}
+
+.globe:hover .language {
+font-weight: 300; 
+color: #404040; 
+}
+
+
+.language-options {
+display: none; 
+border: 1px solid #ccc; 
+top: 100px; 
+right: 0;
+z-index: 1000;
+padding: 10px; 
+}
+
+.language-option {
+display: block;
+padding: 5px;
+cursor: pointer; 
+background-color: #461313;
+}
+
+.language-option:hover {
+background-color: #f0f0f0; /* Màu nền khi hover */
+}
+
+.search-input {
+display: none;
+top: 100px;
+left: 0; /* Căn trái */
+z-index: 1000; /* Đảm bảo nó nổi bật trên các phần tử khác */
+background-color: #e34848;
+}
+
+.search-input input {
+width: 200px; /* Đặt chiều rộng cho thanh tìm kiếm */
+padding: 5px; /* Khoảng cách bên trong thanh tìm kiếm */
+}
+
+/*HEADER*/
+.breadcrumb {
+position: absolute;
+font-family: sans-serif;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+width: 103px;
+height: 45px;
+top: 139px;
+left: 108px;
+gap: 5px;
+z-index: 1;
+}
+
+.breadcrumb a {
+font-size: 16px;
+font-weight: 400;
+line-height: 28.8px;
+text-align: left;
+color: black; 
+text-decoration: none;
+}
+
+.breadcrumb a:hover {
+color: #b4004e; 
+}
+
+.breadcrumb p {
+font-size: 16px;
+font-weight: 700;
+line-height: 22.4px;
+text-align: left;
+margin: 0;
+}
+
+.arrow {
+width: auto;
+height: auto;
+font-size: 20px;
+margin: 0 0px; 
+color: #868686;
+opacity: 1;
+}
+.frame_blog {
+position: absolute;
+width: 1224px;
+height: auto;
+top: 253px;
+left: 108px;
+gap: 24px;
+display: flex;
+flex-direction: column; /* sắp xếp theo chiều dọc */
+opacity: 1; /* Hiển thị các frame */
+
+}
+.frame{
+width: 1224px;
+height: 474px;
+gap: 24px;
+opacity: 0px;
+display:flex ;
+flex-direction: row; 
+}
+
+#BLOG{
+position: absolute;
+width: 70px;
+height: 45px;
+top: 192px;
+left: 108px;
+gap: 0px;
+opacity: 0px;
+font-size: 32px;
+font-weight: 700;
+line-height: 44.8px;
+text-align: left;
+}
+.blog_card01{
+width: 392px;
+height: 474px;
+padding: 0px 0px 24px 0px;
+gap: 24px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+}
+.img_card01{
+    width: 392px;
+    height: 294px;
+    gap: 0px;
+    opacity: 0px;
+}
+.text{
+width: 392px;
+height:132px;
+padding: 0px 24px 0px 24px;
+gap: 16px;
+opacity: 0px;
+
+}
+.text_head  {
+width: 344px;
+height: 28px;
+gap: 0px;
+opacity: 0px;
+font-family: Open Sans;
+font-size: 20px;
+font-weight: 700;
+line-height: 28px;
+text-align: left;
+}
+.text_end {
+    width: 344px;
+height: 64px;
+gap: 0px;
+opacity: 0px;
+font-family: Open Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 28.8px;
+text-align: left;
+
+}
+
+.text_time{
+
+width: 344px;
+height: 16px;
+gap: 8px;
+opacity: 0px;
+display:flex;
+align-items: center;
+
+}
+.skincare{
+width: 56px;
+height: 16px;
+gap: 0px;
+opacity: 0px;
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 600;
+line-height: 16.34px;
+letter-spacing: 0.800000011920929px;
+text-align: left;
+}
+.Dr.WadeWarren{
+width: 111px;
+height: 16px;
+gap: 0px;
+opacity: 0px;
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 600;
+line-height: 16.34px;
+letter-spacing: 0.800000011920929px;
+text-align: left;
+}
+.time{
+width: 78px;
+height: 16px;
+gap: 0px;
+opacity: 0px;
+font-family: Open Sans;
+font-size: 12px;
+font-weight: 600;
+line-height: 16.34px;
+letter-spacing: 0.800000011920929px;
+text-align: left;
+}
+
+.line1{
+    width: 16px;
+    height: 0px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    transform: rotate(90deg);
+    border: 1px solid #606060    
+}
+.line2{
+    width: 16px;
+    height: 0px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    transform: rotate(90deg);
+    border: 1px solid #606060
+}
+
+.text_head1{
+width: 344px;
+height: 16.8px;
+gap: 0px;
+opacity: 0px;
+background: #EDEDED;
+}
+.text_time1{
+ width: 277px;
+height: 16px;
+top: 36px;
+gap: 8px;
+opacity: 0px;
+display:flex;
+align-items: center;
+
+}
+.Rectangle1{
+    width: 78px;
+    height: 10.08px;
+    gap: 0px;
+    opacity: 0px;
+    background: #EDEDED;
+}
+.Rectangle2{
+    width: 111px;
+height: 10.08px;
+gap: 0px;
+opacity: 0px;
+background: #EDEDED;
+}
+.Rectangle3{
+    width: 56px;
+height: 10.08px;
+gap: 0px;
+opacity: 0px;
+background: #EDEDED;
+}
+.Rectangle4{
+    width: 344px;
+height: 13.44px;
+top: 68px;
+left: 24px;
+gap: 0px;
+opacity: 0px;
+background: #EDEDED;
+}
+.Rectangle5{
+    margin-top: 10px;
+    width: 344px;
+height: 13.44px;
+top: 68px;
+left: 24px;
+gap: 0px;
+opacity: 0px;
+background: #EDEDED;
+}
