@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeautyA Header</title>
+    <title>Beauty And Wellness</title>
     <link rel="stylesheet" href="blog01.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <header class="header">
@@ -52,12 +52,36 @@
                 <div class="text_time">
                     <p class="Skincare">Skincare</p>
                     <div class="line1"></div>
-                    <p class="Dr.WadeWarren">Dr. Wade Warren</p>
+                    <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
                     <div class="line2"></div>
                     <p class="time">Jan 20, 2021</p>
                 </div>
-                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.</p>
+                <p class="text_end" id="short-text">
+                    Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
+                </p>
+                <p class="text_end" id="full-text" style="display: none;">
+                    Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
+                </p>
+                <script>
+                    const ellipsis = document.querySelector(".ellipsis");
+                    const shortText = document.getElementById("short-text");
+                    const fullText = document.getElementById("full-text");
+                
+                    ellipsis.addEventListener("click", (event) => {
+                        fullText.style.display = "block";
+                        shortText.style.display = "none";
+                        event.stopPropagation();
+                    });
+                
+                    document.addEventListener("click", (event) => {
+                        if (!fullText.contains(event.target) && !ellipsis.contains(event.target)) {
+                            fullText.style.display = "none";
+                            shortText.style.display = "block";
+                        }
+                    });
+                </script>
             </div>
+            
         </div>         
         <div class="blog_card01">
             <a href="blog02.html">
@@ -65,15 +89,22 @@
             </a>
             <div class="text">
                 <p class="text_head">How to get clear skin fast</p>
-                    <div class="text_time">
-                  <p class="Skincare">Skincare</p>
+                <div class="text_time">
+                    <p class="Skincare">Skincare</p>
                     <div class="line1"></div>
                     <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
                     <div class="line2"></div>
                     <p class="time">Jan 20, 2021</p>
-                    </div>
-                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.</p>
                 </div>
+                <p class="text_end" id="short-text">
+                    Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
+                </p>
+                <p class="text_end" id="full-text" style="display: none;">
+                    Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
+                </p>
+                
+            </div>
+            
         </div>
         <div class="blog_card01">
             <a href="blog02.html">
@@ -81,15 +112,20 @@
             </a>
             <div class="text">
                 <p class="text_head">How to get clear skin fast</p>
-                    <div class="text_time">
-                <p class="Skincare">Skincare</p>
+                <div class="text_time">
+                    <p class="Skincare">Skincare</p>
                     <div class="line1"></div>
                     <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
                     <div class="line2"></div>
                     <p class="time">Jan 20, 2021</p>
-                    </div>
-                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.</p>
                 </div>
+                <p class="text_end" id="short-text">
+                    Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
+                </p>
+                <p class="text_end" id="full-text" style="display: none;">
+                    Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
+                </p>
+            </div>
         </div>
     </div>
     <div class="frame">
@@ -97,49 +133,64 @@
             <a href="blog02.html">
             <img src="body-img/blog card4.png" alt="img_card01" class="img_card01" alt>
         </a>
-            <div class="text">
-                <p class="text_head">How to get clear skin fast</p>
-                    <div class="text_time">
+        <div class="text">
+            <p class="text_head">How to get clear skin fast</p>
+            <div class="text_time">
                 <p class="Skincare">Skincare</p>
-                    <div class="line1"></div>
-                    <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
-                    <div class="line2"></div>
-                    <p class="time">Jan 20, 2021</p>
-                    </div>
-                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.</p>
-                </div>
+                <div class="line1"></div>
+                <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
+                <div class="line2"></div>
+                <p class="time">Jan 20, 2021</p>
+            </div>
+            <p class="text_end" id="short-text">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
+            </p>
+            <p class="text_end" id="full-text" style="display: none;">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
+            </p>
+        </div>
         </div>  
         <div class="blog_card01">
             <a href="blog02.html">
             <img src="body-img/blog card5.png" alt="img_card01" class="img_card01" alt>
         </a>
-            <div class="text">
-                <p class="text_head">How to get clear skin fast</p>
-                    <div class="text_time">
+        <div class="text">
+            <p class="text_head">How to get clear skin fast</p>
+            <div class="text_time">
                 <p class="Skincare">Skincare</p>
-                    <div class="line1"></div>
-                    <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
-                    <div class="line2"></div>
-                    <p class="time">Jan 20, 2021</p>
-                    </div>
-                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.</p>
-                </div>
+                <div class="line1"></div>
+                <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
+                <div class="line2"></div>
+                <p class="time">Jan 20, 2021</p>
+            </div>
+            <p class="text_end" id="short-text">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
+            </p>
+            <p class="text_end" id="full-text" style="display: none;">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
+            </p>
+        </div>
         </div>
         <div class="blog_card01">
             <a href="blog02.html">
             <img src="body-img/blog card6.png" alt="img_card01" class="img_card01" alt>
         </a>
-            <div class="text">
-                <p class="text_head">How to get clear skin fast</p>
-                    <div class="text_time">
+        <div class="text">
+            <p class="text_head">How to get clear skin fast</p>
+            <div class="text_time">
                 <p class="Skincare">Skincare</p>
-                    <div class="line1"></div>
-                    <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
-                    <div class="line2"></div>
-                    <p class="time">Jan 20, 2021</p>
-                    </div>
-                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.</p>
-                </div>
+                <div class="line1"></div>
+                <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
+                <div class="line2"></div>
+                <p class="time">Jan 20, 2021</p>
+            </div>
+            <p class="text_end" id="short-text">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
+            </p>
+            <p class="text_end" id="full-text" style="display: none;">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
+            </p>
+        </div>
         </div>
     </div>
     <div class="frame">
@@ -147,49 +198,64 @@
             <a href="blog2.html">
             <img src="body-img/blog card7.png" alt="img_card01" class="img_card01" alt>
         </a>
-            <div class="text">
-                <p class="text_head">How to get clear skin fast</p>
-                    <div class="text_time">
+        <div class="text">
+            <p class="text_head">How to get clear skin fast</p>
+            <div class="text_time">
                 <p class="Skincare">Skincare</p>
-                    <div class="line1"></div>
-                    <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
-                    <div class="line2"></div>
-                    <p class="time">Jan 20, 2021</p>
-                    </div>
-                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.</p>
-                </div>
+                <div class="line1"></div>
+                <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
+                <div class="line2"></div>
+                <p class="time">Jan 20, 2021</p>
+            </div>
+            <p class="text_end" id="short-text">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
+            </p>
+            <p class="text_end" id="full-text" style="display: none;">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
+            </p>
+        </div>
         </div>  
         <div class="blog_card01">
             <a href="blog02.html">
             <img src="body-img/blog card8.png" alt="img_card01" class="img_card01" alt>
         </a>
-            <div class="text">
-                <p class="text_head">How to get clear skin fast</p>
-                    <div class="text_time">
+        <div class="text">
+            <p class="text_head">How to get clear skin fast</p>
+            <div class="text_time">
                 <p class="Skincare">Skincare</p>
-                    <div class="line1"></div>
-                    <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
-                    <div class="line2"></div>
-                    <p class="time">Jan 20, 2021</p>
-                    </div>
-                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.</p>
-                </div>
+                <div class="line1"></div>
+                <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
+                <div class="line2"></div>
+                <p class="time">Jan 20, 2021</p>
+            </div>
+            <p class="text_end" id="short-text">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
+            </p>
+            <p class="text_end" id="full-text" style="display: none;">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
+            </p>
+        </div>
         </div>
         <div class="blog_card01">
             <a href="blog2.html">
             <img src="body-img/blog card9.png" alt="img_card01" class="img_card01" alt>
         </a>
-            <div class="text">
-                <p class="text_head">How to get clear skin fast</p>
-                    <div class="text_time">
+        <div class="text">
+            <p class="text_head">How to get clear skin fast</p>
+            <div class="text_time">
                 <p class="Skincare">Skincare</p>
-                    <div class="line1"></div>
-                    <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
-                    <div class="line2"></div>
-                    <p class="time">Jan 20, 2021</p>
-                    </div>
-                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.</p>
+                <div class="line1"></div>
+                <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
+                <div class="line2"></div>
+                <p class="time">Jan 20, 2021</p>
             </div>
+            <p class="text_end" id="short-text">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
+            </p>
+            <p class="text_end" id="full-text" style="display: none;">
+                Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
+            </p>
+        </div>
         </div>    
     </div>
     <div class="frame">

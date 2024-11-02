@@ -58,17 +58,17 @@
     </div>
     <p class="Product">Products’ Categories</p>
     <div class="categoryframe">
-        <div class="makeup">
-            <img src="landing-img/make up image.png" alt="make up image" class="makeup-img">
-            <p class="makeup-text">Women Make Up</p>
+        <div class="categoryframe-box1">
+            <img src="landing-img/make up image.png" alt="make up image" class="categoryframe-img">
+            <p class="categoryframe-text">Women Make Up</p>
         </div>
-        <div class="skincare">
-            <img src="landing-img/skincare image.png" alt="skincare image" class="skincare-img">
-            <p class="skincare-text">women skincare</p>
+        <div class="categoryframe-box1">
+            <img src="landing-img/skincare image.png" alt="skincare image" class="categoryframe-img">
+            <p class="categoryframe-text">women skincare</p>
         </div>
-        <div class="gifts">
-            <img src="landing-img/gifts image.png" alt="gifts image" class="gifts-img">
-            <p class="gifts-text">Gifts & Sets</p>
+        <div class="categoryframe-box1">
+            <img src="landing-img/gifts image.png" alt="gifts image" class="categoryframe-img">
+            <p class="categoryframe-text">Gifts & Sets</p>
         </div>
     </div>
 
@@ -130,6 +130,8 @@
             </div>
         </div>
     </div>
+
+    
     <div class="frame5">
         <p class="newin">New in</p>
         <div class="frame5-box">
@@ -239,12 +241,34 @@
                 <div class="text_time">
                     <p class="Skincare">Skincare</p>
                     <div class="line1"></div>
-                    <p class="Dr.WadeWarren">Dr. Wade Warren</p>
+                    <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
                     <div class="line2"></div>
                     <p class="time">Jan 20, 2021</p>
                 </div>
-                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary...</p>
-            </div>
+                <p class="text_end" id="short-text">
+                    Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
+                </p>
+                <p class="text_end" id="full-text" style="display: none;">
+                    Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
+                </p>
+                <script>
+                    const ellipsis = document.querySelector(".ellipsis");
+                    const shortText = document.getElementById("short-text");
+                    const fullText = document.getElementById("full-text");
+                
+                    ellipsis.addEventListener("click", (event) => {
+                        fullText.style.display = "block";
+                        shortText.style.display = "none";
+                        event.stopPropagation();
+                    });
+                
+                    document.addEventListener("click", (event) => {
+                        if (!fullText.contains(event.target) && !ellipsis.contains(event.target)) {
+                            fullText.style.display = "none";
+                            shortText.style.display = "block";
+                        }
+                    });
+                </script>
         </div>
     </div>
         
