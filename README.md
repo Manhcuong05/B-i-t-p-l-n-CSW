@@ -7,6 +7,7 @@
 - **Blog/01-02**
 <<<<<<< HEAD
 - **Link github riêng:https://github.com/Manhcuong05/B-i-t-p-l-n-CSW**
+**Bài làm:https:[//github.com/Manhcuong05/B-i-t-p-l-n-CSW](https://melon-butternut-oyster.glitch.me/Landing/blog-form/blog01.html#)**
 =======
 
 >>>>>>> f152d9edc59da7785f2c8678b86964f58cf0576d
