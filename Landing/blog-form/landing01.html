@@ -6,6 +6,8 @@
     <title>BeautyA Header</title>
     <link rel="stylesheet" href="landing01.css">
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$(document).ready(function() {let currentIndex = 0;const images = $(".pictures .pic");const totalImages = images.length;const carouselElements = $(".carousel_elements");images.hide();$(images[currentIndex]).show();function showNextImage() {$(images[currentIndex]).fadeOut(500);currentIndex = (currentIndex + 1) % totalImages;$(images[currentIndex]).fadeIn(500);updateCarouselIndicators();}function showPreviousImage() {$(images[currentIndex]).fadeOut(500);currentIndex = (currentIndex - 1 + totalImages) % totalImages;$(images[currentIndex]).fadeIn(500);updateCarouselIndicators();}function updateCarouselIndicators() {carouselElements.removeClass('active');$(carouselElements[currentIndex]).addClass('active');}$(".vector_right").click(function() {showNextImage();});$(".vector_left").click(function() {showPreviousImage();});});</script>
 </head>
 <body>
     <header class="header">
@@ -34,28 +36,7 @@
      </div>
                 <div id="circle-shadow"></div>          
     </header>
-    <div class="hero">
-        <div class="button-01">
-            <p class="knowmore">Know More</p>
-        </div>
-    <div class="frame1"></div>
-    <div class="frame2"></div>
-    <p class="unlock">unlock your natural glow </p>
-        <img src="landing-img/hero-img.png" alt="hero-img" class="hero-img">
-    <div class="rectangle114"></div>
-    </div>
-
-    <div class="frame3">
-        <div class="carousel">
-            <div class="rectangle12324"></div>
-        </div>
-        <div class="carousel2">
-            <div class="rectangle12325"></div>
-        </div>
-        <div class="carousel3">
-            <div class="rectangle12325"></div>
-        </div>
-    </div>
+    <div class="hero"><div class="button"><div class="school1"></div></div><div class="frame_26085660"><div class="arrow_left"><div class="vector_left"></div></div></div><div class="frame_26085659"><div class="arrow_right"><div class="vector_right"></div></div></div><div class="pictures"><img src="landing-img/hero-img.png" alt="i1" class="pic"><img src="landing-img/hero-img.png" alt="i2" class="pic"><img src="landing-img/hero-img.png" alt="i3" class="pic"></div></div><div class="frame_26085870"><div class="carousel_elements 1"><div class="rectangle_12324"></div></div><div class="carousel_elements 2"><div class="rectangle_12324"></div></div><div class="carousel_elements 3"><div class="rectangle_12324"></div></div></div>
     <p class="Product">Products’ Categories</p>
     <div class="categoryframe">
         <div class="categoryframe-box1">
@@ -77,9 +58,9 @@
         <p class="scan">Scan with your phone to get started</p>
         <p class="looking">Looking for a full skincare routine? Our NEW Virtual Skincare Analysis Tool evaluates your skin and provides the most personalized recommendations. </p>
         <p class="new">NEW Virtual Skincare Analysis</p>
-        <div class="button-02">
-            <p class="answer">answer a few questions</p>
-        </div>
+        <button class="button-02">
+            <p class="answer">Answer A Few Questions</p>
+        </button>
         <img src="landing-img/QR.png" alt="QR" class="qr-img">
         <img src="landing-img/image 10.png" alt="image10" class="img10-img">
     </div>
@@ -182,11 +163,11 @@
                     <p class="offers-text2a2">visit your local beautya branches to find out more about our special offers in make up and skincare products. </p>
                 </div>
             </div>
-        <div class="frame6-button">
+        <button class="frame6-button">
             <div class="frame6-button-text">
-                <p class="frame6-button-text1"> find branches</p>
+                <p class="frame6-button-text1"> Find Branches</p>
             </div>
-        </div>
+        </button>
         </div>
     </div>
 
@@ -194,16 +175,16 @@
         <img class="frame7-img" src="landing-img/frame7.png" alt="frame7-img">
             <p class="frame7-text1">our brand</p>
             <p class="frame7-text2">We believe that beauty thrives in diversity and discovery. Our purpose is to expand the way the world sees beauty by empowering the Extraordinary in each of us.</p>
-            <div class = "frame7-button">
+            <button class = "frame7-button">
                     <p class="frame7-button-text"> Discover More</p>
-            </div>
+            </button>
     </div>
 
     <p class="text-our-blog">Our Blog</p>
-    <div class="view-all-button">
+    <button class="view-all-button">
         <p class="view-all-button-text">View All</p>
 
-    </div>
+    </button>
 
     <div class="frame8">
         <div class="frame8-box1">
@@ -241,34 +222,12 @@
                 <div class="text_time">
                     <p class="Skincare">Skincare</p>
                     <div class="line1"></div>
-                    <p class="Dr.WadeWarren">Dr. Wade Warren</p> 
+                    <p class="Dr.WadeWarren">Dr. Wade Warren</p>
                     <div class="line2"></div>
                     <p class="time">Jan 20, 2021</p>
                 </div>
-                <p class="text_end" id="short-text">
-                    Many people find it difficult to get clear skin. The methods for getting clear skin will vary<span class="ellipsis">...</span>
-                </p>
-                <p class="text_end" id="full-text" style="display: none;">
-                    Many people find it difficult to get clear skin. The methods for getting clear skin will vary, depending on the person’s skin type. In general, people struggling with acne or blemishes have skin that is dry, oily, or a combination of the two.
-                </p>
-                <script>
-                    const ellipsis = document.querySelector(".ellipsis");
-                    const shortText = document.getElementById("short-text");
-                    const fullText = document.getElementById("full-text");
-                
-                    ellipsis.addEventListener("click", (event) => {
-                        fullText.style.display = "block";
-                        shortText.style.display = "none";
-                        event.stopPropagation();
-                    });
-                
-                    document.addEventListener("click", (event) => {
-                        if (!fullText.contains(event.target) && !ellipsis.contains(event.target)) {
-                            fullText.style.display = "none";
-                            shortText.style.display = "block";
-                        }
-                    });
-                </script>
+                <p class="text_end">Many people find it difficult to get clear skin. The methods for getting clear skin will vary...</p>
+            </div>
         </div>
     </div>
         

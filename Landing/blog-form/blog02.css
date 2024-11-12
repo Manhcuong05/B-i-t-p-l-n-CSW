@@ -271,6 +271,22 @@ background: #FFFFFF;
 display: flex;
 border: 1px solid #DFDFDF
 }
+.group01 #copy:hover,
+.group01 #reddit:hover,
+.group01 #facebook:hover,
+.group01 #twitter:hover,
+.group01 #instagram:hover {
+    animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Độ cao của hiệu ứng nảy */
+    }
+}
 .group02{
 position: absolute;
 width: 288px;
